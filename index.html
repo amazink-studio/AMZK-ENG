@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Nombre de la página -->
+	<title>Amazink Studio</title>
+	<!-- Descripción de la pagina -->
+	<meta name="description" content="We are a social impact design studio that creates powerful, useful and beautiful narratives that connect with people and communities.">
+
+	<meta name=”robots” content="index, follow">
+	<meta name="author" content="Miguel Mejía | Amazink Studio" />
+	<meta name="copyright" content="Amazink Studio, 2023" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="Amazink Studio">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://eng.amazink.co">
+	<meta property="og:description" content="We are a social impact design studio that creates powerful, useful and beautiful narratives that connect with people and communities.">
+	<meta property="og:image" content="https://eng.amazink.co/img/OG-img.jpg">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/inicio.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/slider.css">
+
+
+</head>
+
+<body>
+
+	<!-- MENÚ NAVEGACIÓN -->	
+	<nav>
+		<div class="idiomas">
+			<span class="logo"></span>
+			<a lang="es" href="https://amazink.co" class="idioma">Español</a>
+		</div>
+
+		<!-- ÍCONO PANTALLAS PEQUEÑAS -->
+		<input type="checkbox" id="menuBtn" class="menu-btn hidden" />
+		<label class="menu-icon" for="menuBtn">
+			<span class="navicon"></span>
+		</label>
+
+		<ul class="menu">
+			<li class="activo">Home</li>
+			<li><a href="pages/portafolio.html">Portfolio</a></li>
+			<li><a href="pages/nosotras.html">About us</a></li>
+			<li>
+				<label for="menuBtn" aria-hidden="true">
+					<a href="#contacto" onclick="menuBtn.click()">
+						Contact
+					</a>
+				</label>
+			</li>
+		</ul>
+
+	</nav>
+	
+	<!-- VIDEO DE CABEZOTE -->
+	<header id="hero">
+		<video playsinline autoplay muted loop poster="img/inicio_vid-bk.jpg">
+			<source src="img/inicio_vid.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+		<h1 class="hero_titulo">We create powerful, useful, and beautiful narratives that connect people and communities.</h1>
+	</header>
+
+	<!-- LÍNEAS DE TRABAJO -->
+	<main>
+		<section class="lineas fondoMenta">
+			<img src="img/lineas_cEstrategica.png" alt="">
+			<div class="lineas_contenido">
+				<h2>Strategic Communications</h2>
+				<p>We design, develop, and implement communication strategies with empathy and a deep understanding of your audiences. We utilize emotions to foster understanding, encourage appropriate interaction, and amplify the information we share.</p>
+			</div>	
+		</section>
+
+		<section class="lineas fondoAzul lineasAlternas">
+			<img src="img/lineas_disenno.png" alt="">
+			<div class="lineas_contenido">
+				<h2>Design</h2>
+				<p>We design products based on storytelling to enhance easy remembrance and replicability. Accessibility and sensibility are at the core of our approach, enabling people and communities to access, identify with, and relate to the information.</p>
+			</div>	
+		</section>
+
+		<section class="lineas fondoCeleste">
+			<img src="img/lineas_animacion.png" alt="">
+			<div class="lineas_contenido">
+				<h2>Animation and Visual Production</h2>
+				<p>Stories unite people, and narratives bring communities together. We embrace the power of metaphors, time, and movement to explore diverse ways of communication. From scriptwriting to production and post-production, we meticulously and effectively empower messages to ensure they are received clearly and concisely.</p>
+			</div>	
+		</section>
+
+		<section class="lineas fondoNaranja lineasAlternas">
+			<img src="img/lineas_relatorias.png" alt="">
+			<div class="lineas_contenido">
+				<h2>Graphic recording and documentations</h2>
+				<p>We bring memories to life with drawings and words captured in real-time, documenting conversations and experiences. Our primary objective is to create outreach products that are not only useful and powerful but also beautiful, enabling us to extend dialogues and foster connections.</p>
+			</div>
+		</section>
+
+		<section class="lineas fondoMorado">
+			<img src="img/lineas_nDigitales.png" alt="">
+			<div class="lineas_contenido">
+				<h2>Digital Narratives</h2>
+				<p>We develop narratives that go beyond material boundaries, tailored to the physical, cognitive, and technical capabilities of each individual. Our focus is on creating digital spaces that provide dynamic experiences without barriers being immersive, personal, and memorable.</p>
+			</div>
+		</section>
+
+	</main>
+
+	<div id="pie"></div>
+
+	<!-- Modernizr -->
+	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+	<!-- JQERY -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<!-- JS base -->
+	<script src="js/main.js"></script>
+	<!-- JS del portafolio -->
+	<script src="js/slick.js"></script>
+
+	<!-- parámetros slick -->
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function(e) {
+			$(".clientesCarrusel").slick({
+				dots: false,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 6,
+				adaptiveHeight: false,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				responsive: [
+					{
+					breakpoint: 1400,
+					settings: {
+						slidesToShow: 5,
+						}
+					},
+					{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 4,
+						}
+					},
+					{
+					breakpoint: 1000,
+					settings: {
+						slidesToShow: 3,
+						}
+					},
+					{
+					breakpoint: 700,
+					settings: {
+						slidesToShow: 2,
+						}
+					},
+					{
+					breakpoint: 400,
+					settings: {
+						slidesToShow: 1,
+						}
+					},
+				]
+			});
+		});
+	</script>
+
+</body>
+</html>

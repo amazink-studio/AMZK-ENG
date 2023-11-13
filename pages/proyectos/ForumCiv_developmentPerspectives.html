@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Nombre del proyecto -->
+	<title>Development Perspectives | AMZK</title>
+	<!-- La descripción corta del proyecto -->
+	<meta name="description" content="Together with ForumCiv, we utilized the strength and power of metaphors to explain why these tools were developed, their relevance, and how they can be effectively applied.">
+
+	<meta name=”robots” content="index, follow">
+	<meta name="author" content="Miguel Mejía | Amazink Studio" />
+	<meta name="copyright" content="Amazink Studio, 2023" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- llenar para cada proyecto -->
+		<!-- El título del proyecto -->
+	<meta property="og:title" content="Development Perspectives | AMZK">
+	<meta property="og:type" content="website">
+		<!-- La url final del proyecto -->
+	<meta property="og:url" content="https://eng.amazink.co/pages/proyectos/ForumCiv_developmentPerspectives.html">
+		<!-- La descripción corta del proyecto -->
+	<meta property="og:description" content="Together with ForumCiv, we utilized the strength and power of metaphors to explain why these tools were developed, their relevance, and how they can be effectively applied.">
+		<!-- La imagen principal del proyecto -->
+	<meta property="og:image" content="https://eng.amazink.co/img/proyecto_ForumCiv_developmentPerspectives-1.jpg">
+
+	<link rel="manifest" href="../../site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../site.webmanifest">
+
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../css/proyecto.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+	<link rel="stylesheet" href="../../css/slider.css">
+
+</head>
+
+<body>
+
+	<!-- MENÚ NAVEGACIÓN -->
+	<nav>
+		<div class="idiomas">
+			<span class="logo"></span>
+			<a lang="es" href="https://amazink.co/pages/proyectos/ForumCiv_developmentPerspectives.html" class="idioma">Español</a>
+		</div>
+
+		<!-- ÍCONO PANTALLAS PEQUEÑAS -->
+		<input type="checkbox" id="menuBtn" class="menu-btn hidden" />
+		<label class="menu-icon" for="menuBtn">
+			<span class="navicon"></span>
+		</label>
+
+		<ul class="menu">
+			<li><a href="../../">Home</a></li>
+			<li><a href="../portafolio.html">Portfolio</a></li>
+			<li><a href="../nosotras.html">About us</a></li>
+			<li>
+				<label for="menuBtn" aria-hidden="true">
+					<a href="#contacto" onclick="menuBtn.click()">
+						Contact
+					</a>
+				</label>
+			</li>
+		</ul>
+	</nav>
+	
+	<!-- CONTENIDO CENTRAL -->
+	<main>
+		<!-- TÍTULO DEL PROYECTO -->
+		<div class="cabezoteProyecto">
+			<h1 class="tituloProyecto">
+				Development Perspectives
+			</h1>
+		
+			<p class="categoriaProyecto">
+				> Animation and storytelling
+			</p>
+		</div>
+		
+		<!-- CONTENIDO DEL PROYECTO -->
+		<section class="contenidoProyecto">
+
+			<iframe src="https://www.youtube.com/embed/vxeBsukKJqE?controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+			<img src="../../img/proyecto_ForumCiv_developmentPerspectives-1.jpg"alt="">
+
+			<img src="../../img/proyecto_ForumCiv_developmentPerspectives-2.jpg"alt="">
+
+			<img src="../../img/proyecto_ForumCiv_developmentPerspectives-3.jpg"alt="">
+
+			<img src="../../img/proyecto_ForumCiv_developmentPerspectives-4.jpg"alt="">
+
+			<img src="../../img/proyecto_ForumCiv_developmentPerspectives-5.jpg"alt="">
+			
+		</section>
+
+		<!-- INFORMACIÓN DEL PROYECTO -->
+		<section class="infoProyecto">
+			
+			<h2>About the project</h2>
+			<p>ForumCiv is a Swedish civil society organization that operates with a rights-based approach. Their purpose is to strengthen democratic processes and eradicate discrimination in the territories where they operate, contributing to creating a more just and sustainable world where all individuals are recognized and respected.</p>
+
+			<p>To achieve this mission, ForumCiv has developed different tools known as development perspectives, which are replicable in diverse contexts. These tools enable the assessment of the root causes that enhance human rights violations and help design strategies to transform structural violence.</p>
+
+			<p>Together with ForumCiv, we utilized the strength and power of metaphors to explain why these tools were developed, their relevance, and how they can be effectively applied.</p>
+
+		</section>	
+
+		<!-- FICHA TÉCNICA DEL PROYECTO -->
+		<section class="fichaTecnica">
+			<h2>Technical information</h2>
+			<p><i>Client:</i> ForumCiv</p>
+			<p><i>Year:</i> 2021</p>
+			<p><i>Delivered products:</i> 1 animated video.</p>
+
+			<!-- <div class="enlacesProyecto">
+				<p><strong>Enlaces:</strong></p>
+				<p><a href="">web</a> - <a href="">pdf</a></p>
+			</div> -->
+
+		</section>
+
+	</main>
+
+	<!-- PROYECTOS RELACIONADOS -->
+	<div id="relacionados"></div>
+	
+	<div id="pie"></div>
+
+	<!-- Modernizr -->
+	<script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
+	<!-- JQERY -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<!-- JS base -->
+	<script src="../../js/main.js"></script>
+	<!-- JS PROYECTOS RELACIONADOS -->
+	<script> 
+		$(function(){
+			$("#relacionados").load("relacionadosAnimacion.html"); 
+		});
+	</script> 
+	<!-- JS de los carruseles -->
+	<script src="../../js/slick.js"></script>
+
+	<!-- parámetros slick -->
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function(e) {
+			$('.destacados').slick({
+				// centerMode: true,
+				adaptiveHeight: true,
+				infinite: true,
+				// autoplay: true,
+				// autoplaySpeed: 1000,
+				speed: 500,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+			});
+
+			$(".clientesCarrusel").slick({
+				dots: false,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 6,
+				adaptiveHeight: false,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				
+				responsive: [
+					
+					{
+					breakpoint: 1400,
+					settings: {
+						slidesToShow: 5,
+						}
+					},
+					{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 4,
+						}
+					},
+					{
+					breakpoint: 1000,
+					settings: {
+						slidesToShow: 3,
+						}
+					},
+					{
+					breakpoint: 700,
+					settings: {
+						slidesToShow: 2,
+						}
+					},
+					{
+					breakpoint: 400,
+					settings: {
+						slidesToShow: 1,
+						}
+					},
+					
+				]
+			});
+		});
+	</script>
+
+</body>
+</html>
